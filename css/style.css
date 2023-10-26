@@ -1,0 +1,137 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+body{
+    background-color: hsl(185, 75%, 39%);
+    background-image: url('../assets/bg-pattern-top.svg'), url('../assets/bg-pattern-bottom.svg');
+    background-repeat: no-repeat, no-repeat;
+    background-position: -300px -600px, 600px 300px;
+    transition: .3s;
+}
+
+section{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 2%;
+}
+
+.font-montserrat{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.attribution { 
+    font-size: 12px; 
+    color: #181818;
+    text-align: center; 
+}
+.attribution a { 
+    color: rgba(255, 255, 255, 0.6); 
+    text-decoration: none;
+    font-weight: bold;
+    transition: .3s;
+}
+
+.attribution a:hover{
+    opacity: .7;
+}
+
+.profile-container{
+    max-width: 350px;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.profile-banner{
+    height: 140px;
+    background-image: url('../assets/bg-pattern-card.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.profile-content{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.profile-content img{
+    position: absolute;
+    top: -50px;
+    border-radius: 50%;
+    border: 6px solid white;
+}
+
+.profile-info{    
+    padding: 20px 20px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    gap: 5px;
+}
+
+.profile-identity{
+    display: flex;
+    align-items: center;
+}
+
+.profile-identity p, .profile-social-info p:first-of-type{
+    color: hsl(229, 23%, 23%);
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.profile-identity span{
+    margin-left: 10px;
+    color: hsl(227, 10%, 46%);
+}
+
+.profile-info-city, .profile-social-info p:last-of-type{    
+    color: hsl(225, 6%, 59%);
+}
+
+.profile-social{
+    width: 100%;
+    display: flex;    
+    justify-content: space-evenly;
+    text-align: center;
+    padding: 20px;
+    border-top: 1px solid hsl(0, 0%, 87%);
+}
+
+.profile-social-info p:last-of-type{
+    font-size: 12px;
+}
+
+@media (max-width: 768px){
+    body{
+        background-position: -600px -600px, 300px 300px;
+    }
+}
+
+@media (max-width: 520px){
+    body{
+        background-position: -700px -600px, 200px 300px;
+    }
+}
+
+@media (max-width: 375px){
+    body{
+        background-position: -700px -700px, 100px 300px;
+    }
+}
